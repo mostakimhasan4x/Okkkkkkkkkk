@@ -2,7 +2,7 @@
 
 x-noobs
 
-A simple Node.js package for downloading media files via the https://wwe.noobs-api.000.pe/dipto/alldl API. This package takes a URL and retrieves downloadable media links, making it easier to access media files from supported sources.
+A simple Node.js package for downloading media files via the https://www.x-noobs-api.000.pe API. This package takes a URL and retrieves downloadable media links, making it easier to access media files from supported sources.
 
 Features
 
