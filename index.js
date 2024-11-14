@@ -6,7 +6,7 @@ async function downloadMedia(url) {
     }
 
     try {
-        const response = await axios.get(`https://wwe.noobs-api.000.pe/dipto/alldl?url=${url}`);
+        const response = await axios.get(`https://www.noobs-api.000.pe/dipto/alldl?url=${url}`);
 
        if(response.data){
             return response.data;
