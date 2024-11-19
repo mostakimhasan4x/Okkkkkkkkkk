@@ -1,30 +1,45 @@
----
+<h3 align="center">
 
-x-noobs
+  <p align="center"><img src="https://img.shields.io/badge/𝗪𝗟𝗖𝗠 𝗧𝗢 𝗠𝗘𝗗𝗜𝗔 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥-green?colorA=%23ff0000&colorB=%23017e40&style=flat-square">
 
-A simple Node.js package for downloading media files via the https://www.x-noobs-api.000.pe API. This package takes a URL and retrieves downloadable media links, making it easier to access media files from supported sources.
+</h3>
 
-Features
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Neuton&size=25&color=30FF40&background=000000&center=true&vCenter=true&width=360&height=60&lines=Hello+Worl+I'm+ALIF-HOSSON+Here+🥵;𝙸𝚃'𝚜+𝙽𝙾𝚃+𝙰+𝙹𝚄𝚂𝚃+𝙽𝙰𝙼𝙴+𝙱𝚁𝙾+😼;𝙸𝚃'𝚜+𝙰+𝙱𝚁𝙰𝙽𝙳+🔥;Respect+Alif-Hosson+🥀;Thanks+My+All+Friend+😙+😌)](https://git.io/typing-svg)
 
-Fetch downloadable media links from a provided URL
+[![npm version](https://img.shields.io/npm/v/x-noobs.svg?style=flat-square)](https://www.npmjs.com/package/x-noobs)
+[![GitHub package version](https://img.shields.io/github/package-json/v/Alifhosson/x-noobs?label=GitHub&style=flat-square)](https://github.com/Alifhosson/x-noobs)
+[![npm downloads](https://img.shields.io/npm/dm/x-noobs.svg?style=flat-square)](https://www.npmjs.com/package/x-noobs)
+[![jsDelivr](https://data.jsdelivr.com/v1/package/npm/x-noobs/badge)](https://www.jsdelivr.com/package/npm/x-noobs)
 
-Simple to use and lightweight
-
-Returns detailed response data
-
-
-Installation
+## Instalation 
 
 Install the package using npm:
 
-npm install x-noobs
+```bash
+npm i x-noobs
+```
 
-Usage
+# x-noobs
 
-Below is a quick example of how to use x-noobs to fetch download links from a given URL.
+A simple Node.js package for downloading media files via the [x-noobs API](https://www.x-noobs-api.000.pe). This package allows you to fetch downloadable media links from a given URL, making it easier to access media files from supported sources.
 
-Example
+---
 
+## Features
+
+- Fetch downloadable media links from a provided URL.
+- Simple to use and lightweight.
+- Returns detailed response data with title, thumbnail, and download links.
+
+---
+
+## Usage
+
+Below is an example of how to use `x-noobs` to fetch download links from a URL.
+
+### Example
+
+```javascript
 const downloadMedia = require('x-noobs');
 
 (async () => {
@@ -35,11 +50,27 @@ const downloadMedia = require('x-noobs');
         console.error("Error:", error.message);
     }
 })();
+```
 
-Response Structure
+---
 
-The API response will be an object containing media details. An example response may look like this:
+## API Reference
 
+The `downloadMedia` function accepts a single parameter:
+
+- `url` (string) - The URL of the media you want to download.
+
+### Example Request
+
+```javascript
+const mediaData = await downloadMedia("https://example.com/media-url");
+```
+
+### Example Response
+
+A successful response will include an object with the following structure:
+
+```json
 {
     "success": true,
     "data": {
@@ -59,62 +90,35 @@ The API response will be an object containing media details. An example response
         ]
     }
 }
+```
 
-API Reference
+- `success`: Indicates whether the request was successful.
+- `data`: Contains details about the media:
+  - `title`: Title of the media.
+  - `thumbnail`: URL of the media's thumbnail.
+  - `downloadLinks`: An array of objects, each containing:
+    - `format`: The format of the media (e.g., mp4, mp3).
+    - `quality`: The quality of the media (e.g., 720p, 128kbps).
+    - `url`: The direct download URL.
 
-The downloadMedia function accepts a single parameter:
+---
 
-url (string) - The URL of the media you want to download.
+## Error Handling
 
+If the API request fails, the function will throw an error. Use a `try-catch` block to handle errors gracefully.
 
-Example Request
+### Example
 
-await downloadMedia("https://example.com/media-url");
-
-Example Response
-
-A successful response will include the following:
-
-success: Boolean indicating whether the request succeeded
-
-data: An object containing:
-
-title: The title of the media
-
-thumbnail: URL of the media's thumbnail image
-
-downloadLinks: Array of objects, each containing:
-
-format: Format of the media (e.g., mp4, mp3)
-
-quality: Quality of the media (e.g., 720p, 128kbps)
-
-url: Direct download URL for the media
-
-
-
-
-Error Handling
-
-If the API request fails, the function will throw an error. Make sure to use a try-catch block to handle potential errors gracefully:
-
+```javascript
 try {
     const mediaData = await downloadMedia("https://example.com/media-url");
     console.log(mediaData);
 } catch (error) {
     console.error("Error:", error.message);
 }
-
-License
-
-This project is licensed under the MIT License.
-
-
----
-
-Contributing
-
-Contributions are welcome! If you'd like to improve this package, please fork the repository and submit a pull request.
-
-
----
+```
+----
+[![WhatsApp](https://img.shields.io/badge/WhatsApp-green?style=for-the-badge&logo=whatsapp)](https://wa.me/+8801978589341)
+[![Facebook](https://img.shields.io/badge/Facebook-green?style=for-the-badge&logo=facebook)]([https://www.facebook.com/100075421394195](https://www.facebook.com/starboy.mostakim?mibextid=ZbWKwL))
+[![Messenger](https://img.shields.io/badge/Chat-Messenger-blue?style=for-the-badge&logo=messenger)](https://m.me/100003323319575)
+[![Github](https://img.shields.io/badge/Github-MrDarkYTgreen?style=for-the-badge&logo=github)](https://github.com/Mostakim0978)
